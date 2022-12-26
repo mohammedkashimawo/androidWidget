@@ -1,0 +1,815 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1" />
+ 
+    <link rel="stylesheet" type="text/css"
+        href="css/bootstrap.css" /> 
+
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+        <!-- Bootstrap Font Icon CSS -->
+        <link rel="stylesheet" 
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    
+
+        <script type="text/javascript" src="vue.js"></script>
+            <script type="text/javascript" src="anime.js">
+
+
+        </script>
+
+        <style type="text/css">
+@media only screen and (max-width:900px ) {
+    body{
+        background-image:linear-gradient(black,white,black);
+        background-color:black;
+    }
+    #divA{          width:100%;
+                    height:100vh;
+                    background-image:url(Grm.jpg);
+                 background-size:cover;
+                 position: fixed;
+
+
+}
+
+    #wulo{
+        width:300px;
+        height:200px;
+        background-color:antiquewhite;
+        
+    }
+        
+        
+        
+        
+
+        #TimeNav{
+            position: relative;
+            width:330px;height:80px;
+            background-color:rgba(255,255,255,0);
+            font-size: 20px;
+            color:black;font-size: 20px;margin-left:32%;margin-top:7%;
+            box-shadow:2px 2px 2px goldenrod;
+        border-radius:50px;}
+
+        #spanA{display:inline-block;
+            position:relative;width:150px;height:80px;
+            background-color:rgba(255,255,255,0);
+            font-size:32px;color:white;font-weight:bolder;
+            border:6px rgba(255,255,255,1) solid;
+            border-radius:50px 0px 0px 50px;text-align:center;
+            padding-top:10px;vertical-align:center;
+            text-shadow:1px 5px black;font-family:Arial;}
+      
+        #spanB{display:inline-block;
+            position:absolute;width:180px;height:80px;
+            border: 6px rgba(255,255,255,1) solid;
+            background-color:white;        
+            border-radius:0px 50px 50px 0px;font-weight:bolder;
+            vertical-align: center;text-align: justify;
+            padding-top:20px;text-shadow: 0px 2px grey;}
+        
+
+
+
+
+
+            /*this is where the styling of the control button is located*/
+
+
+            #dropdowncontrol{
+                display:inline-block;
+                
+                width:100px;
+                height:100px;
+                background-color:none;
+                margin-left:45vw;
+                text-align:center;
+                padding-top:40px;
+                
+
+                             }
+
+            #dropdownbutton{
+                display:inline-block;
+                width:50px;
+                height:50px;
+                border:0px black solid;
+                border-radius:50%;
+                background-color:white;
+                box-shadow:0px 1px 15px none;
+                margin-top:-10px;
+                z-index: -1;
+            
+                
+            }
+
+          
+
+
+            #dropdownbutton:hover{
+            
+                display:inline-block;
+                width:50px;
+                height:50px;
+                border:0px black solid;
+                border-radius:50%;
+                background-color:rgba(255,255,255,0);
+                box-shadow:0px 1px 15px pink;
+                margin-top:-10px;
+                z-index:-1;
+            
+
+            }
+
+           
+            .disse{
+         
+                display:inline-block;
+                visibility: hidden;
+                position:absolute;
+             }
+
+           
+            #diss{
+                    position:absolute;
+                    display:inline-block;             
+           
+                left:22%;
+                margin-top:6%;
+                width:55%;height:70%;
+                background-color:rgba(255,255,255,0);
+                border-radius: 0px 0px 20px 20px;
+                border:0px rgba(255,255,255,1) solid;
+            
+            }
+
+            #tabb{
+                display:inline-block;
+                position: relative;                
+                width:80%;
+                left:20%;
+                margin-top:25px;
+                height:40%;
+                background-color:none;
+                border:0px black solid;border-collapse:separate;
+                font-family:Calibri;
+                text-align:center;
+                text-shadow:0px 1px 1px grey;
+                
+                border-spacing:10px;
+            }
+
+
+            #trA{width:300px;
+                height:50px; 
+
+                border:0px green solid;
+                background-color:none;
+            
+                border-collapse:separate;}
+#tdA{        
+
+    border-radius:15px;
+    
+    width:140px;
+            height:60px;
+            background-color:rgba(255,255,255,0.05);
+        border:0px white solid;
+        box-shadow:0px 0px 2px rgba(255,255,255,0.5);
+        border-collapse:separate;
+    
+    
+    }
+
+    
+#insA{width:57px;heighT:80px;color:white;
+    border-width:0px 0px 0px 0px;border-color: white;border-style: solid;}
+#insA1{width:77px;heighT:80px;color:white;
+    border-width:0px 0px 0px 0px;border-color: white;border-style: solid;}
+
+
+    #tdA:hover{
+        background-color:rgba(255,255,255,0.2)
+    }
+
+#tdA1{ width:140px;
+            height:60px;
+            background-color:rgba(255,255,255,0.05);
+        border:0px white solid;
+        border-collapse:separate;
+        border-radius:15px;
+        box-shadow:0px 0px 2px rgba(255,255,255,0.5);
+}
+
+#tdA1:hover{
+        background-color:rgba(255,255,255,0.2);}
+
+
+
+
+
+#tdA2{ width:140px;
+    height:60px;
+    border-radius:15px;           
+            background-color:rgba(255,255,255,0.05);
+        border:0px white solid;
+        border-collapse:separate;
+        box-shadow:0px 0px 2px rgba(255,255,255,0.5);
+
+    
+}
+#tdA2:hover{
+        background-color:rgba(255,255,255,0.2);}
+
+
+
+    
+#tdA3{ width:140px;
+            height:60px;
+            background-color:rgba(255,255,255,0.05);
+        border:0px white solid;
+        border-collapse:separate;
+        box-shadow:0px 0px 2px rgba(255,255,255,0.5);
+        border-radius:15px;
+}
+#tdA3:hover{
+        background-color:rgba(255,255,255,0.2)}
+
+
+
+        #dropdownbutton2{
+               position:inline-block;
+               
+               width:300px;
+               margin-left:100px;
+               height:30px;
+               border:0px black solid;
+               
+               background-color:white;
+               box-shadow:0px 1px 15px none;
+               margin-top:-400px;
+               z-index: -1;
+               border-radius:10px 10px 0px 0px;
+           
+               
+           }
+
+           #dropdownbutton2:hover{
+               background-color:rgba(255,255,255,0.5);
+           }
+
+        #wulo{
+            width:299px;
+            height:300px;
+            background-color: black;
+            border:1px white solid;
+            margin-left:100px;
+
+        }
+
+
+        #circlA{position: absolute;
+            display:inline-block;
+            width:60px;
+            height:60px;
+            border-radius:50px;
+            background-color:rgba(255,255,255,0.9);
+            margin-left:10px;
+            margin-right:20px;
+             font-size:35px;
+            padding-top:-10px;
+            text-align:center;
+             vertical-align: middle;
+             
+             
+            box-shadow:0px 0px 2px white;}
+
+             #circlA:hover{background-color:rgba(255,255,255,1);
+                             box-shadow:0px 0px 5px white;}
+
+            #circlB{position:absolute;
+            display:inline-block;
+            width:60px;
+            margin-left:80px;
+        margin-right:10px;
+        font-size:35px;
+            padding-top:-10px;
+                height:60px;
+                border-radius:50px;
+            background-color:white;  box-shadow:0px 0px 2px white;}
+
+            #circlB:hover{background-color:rgba(255,255,255,1);
+                             box-shadow:0px 0px 5px white;}
+
+            #circlC{position:absolute;
+            display:inline-block;
+            margin-left:150px;
+        margin-right:10px;
+        font-size:35px;
+            padding-top:-10px;
+            width:60px;
+            height:60px;
+            border-radius:50px;
+            background-color:white;
+              box-shadow:0px 0px 2px white;}
+              #circlC:hover{background-color:rgba(255,255,255,1);
+                             box-shadow:0px 0px 5px white;}
+
+
+            #circlD{position:absolute;
+            display:inline-block;
+            margin-left:220px;
+        margin-right:10px;
+        font-size:35px;
+            padding-top:-10px;
+            width:60px;
+                height:60px;
+                border-radius:50px;
+            background-color:white;
+            box-shadow:0px 0px 2px white;}
+
+            #circlD:hover{background-color:rgba(255,255,255,1);
+                             box-shadow:0px 0px 5px white;}
+            
+            #circlE{position:relative;
+            display:inline-block;
+            margin-left:10px;        
+        font-size:35px;
+            padding-top:-10px;
+            top:40px;
+            width:60px;
+                height:60px;
+                border-radius:50px;
+            background-color:white;  box-shadow:0px 0px 2px white;}
+
+            #circlE:hover{background-color:rgba(255,255,255,1);
+                             box-shadow:0px 0px 5px white;}
+         
+            #circlF{position:relative;
+            display:inline-block;
+            width:60px;      
+                height:60px; 
+                 margin-left:10px;
+                 top:40px;
+                  font-size:35px;
+            padding-top:-10px;
+                border-radius:50px;
+            background-color:white;
+            box-shadow:0px 0px 2px white;
+            }
+            #circlF:hover{background-color:rgba(255,255,255,1);
+                             box-shadow:0px 0px 5px white;}
+            #circlG{
+                position:relative;
+            display:inline-block;
+            margin-left:10px;
+            font-size:35px;
+            padding-top:-10px;
+            top:40px;
+              width:60px;
+                height:60px;
+                border-radius:50px;
+            background-color:white;  box-shadow:0px 0px 2px white;}
+
+            #circlG:hover{background-color:rgba(255,255,255,1);
+                             box-shadow:0px 0px 5px white;}
+
+            #circlH{
+                position:relative;
+            display:inline-block;
+            width:60px;
+            height:60px;
+            margin-left:0px;
+            font-size:35px;
+            padding-top:-10px;
+            top:40px;            
+        font-size:35px;
+            padding-top:-10px;
+                border-radius:50px;
+            background-color:white;  box-shadow:0px 0px 2px white;}
+            #circlH:hover{background-color:rgba(255,255,255,1);
+                             box-shadow:0px 0px 5px white;}
+  }
+
+
+
+
+
+        </style>
+
+</head>
+
+
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<div id="divA">
+
+<div id="TimeNav">
+
+        <span id="spanA" ref="capa">
+        </span>
+
+        <span id="spanB">
+            {{bah}}-{{month}}-{{reason}}{{weekday(week)}}
+        </span>
+
+   </div>
+
+<div id ="dropdowncontrol">
+<button id="dropdownbutton" @click="disse=!disse" > 
+</button>
+</div>
+<div id="diss"  v-bind:class="{disse}">          
+        
+        
+        
+<table id="tabb" v-bind:class="{disse}">
+            <tr id="trA">
+                    <td id="tdA"  @click="man">
+                        
+                        <span id ="insA"><i class="bi bi-sticky"></i></span>
+                        <span id ="insA">SIM</span>
+                        <span id ="insA">
+                            
+                        </span>
+
+
+                            
+                        </span><br>
+
+                        <span id ="insA1">{{ab}}</span>
+                    
+                    
+                    </td>
+                    
+                    
+                    <td id="tdA1" @click="man1">  <span id ="insA"><i class="bi bi-broadcast-pin"></i></span>
+                        <span id ="insA">WIFI</span>
+                        <span id ="insA"></span><br>
+
+                        <span id ="insA1">{{cd}}</span>
+                    
+                    </td>
+                            </tr>
+
+            <tr id="trA">
+                <td id="tdA2" @click="man2">  <span id ="insA"><i class="bi bi-wifi-2"></i></span>
+                    <span id ="insA">BTS</span>
+                    <span id ="insA"></span><br>
+
+                    <span id ="insA1">{{de}}</span>
+                
+                </td><td id="tdA3" @click="man3">  <span id ="insA"><i class="bi bi-lightbulb"></i></span>
+                    <span id ="insA">TORCH</span>
+                    <span id ="insA"></span><br>
+
+                    <span id ="insA1">{{ef}}</span>
+                
+                </td>
+        </tr>
+ </table>
+        
+
+
+
+ <button id="dropdownbutton2"  @click="alude=!alude">
+     
+    click
+    </button>
+
+
+    <div id="wulo" v-if="alude"  >
+
+
+<button id="circlA" @click="chk"><i class="bi bi-brightness-high"></i></button>
+<button id="circlB" @click="ghd"><i class="bi bi-alarm"></i></button>
+<button id="circlC" @click="aris"><i class="bi bi-broadcast"></i></button>
+<button id="circlD" @click="ekuru"><i class="bi bi-battery"></i></button>
+<br>
+<button id="circlE" @click="mp"><i class="bi bi-bell"></i></button>
+<button id="circlF" @click="wale"><i class="bi bi-bicycle"></i></button>
+<button id="circlG" @click="pj"><i class="bi bi-briefcase"></i></button>
+<button id="circlH" @click="lex"><i class='bi bi-bell-slash-fill'></i></button>
+
+
+
+
+
+
+    </div>
+
+
+
+</div>
+    
+
+
+</div>
+
+
+
+    <script type="text/javascript"
+    href="js/bootstrap.min.js">
+</script>
+
+
+
+<script type="text/javascript">
+
+    
+   
+    var vm= new Vue({
+
+        el:"#divA",
+data:{
+        abc:2,
+        crap:0,
+        week:"",
+        alude:false,
+    malt:true,
+    mara:true,
+    chint:true,
+    abiodun:true,
+      disse:true,
+     poy:true,
+     muhi:true,
+     zeh:true,
+     pint:true,
+        kara:-1,
+        abg:true,
+        cde:true,
+        def:true,
+        efg:true,
+        ef:'0FF',
+        cd:'0FF',
+        ab:'0FF',
+        de:'0FF',
+        bah:new Date().getDate()+1,
+        
+        reason:new Date().getFullYear(),
+        
+        month:new Date().getMonth()+1,
+        },
+     mounted:function(){
+            this.bank();
+            this.weekday();   
+                 
+
+        },
+
+methods:{        bank:function(){
+                var am;
+                setInterval(()=>{const TimeNow= new Date();
+                var HourS =  TimeNow.getHours();
+                var Minutes = TimeNow.getMinutes();
+                var Seconds = TimeNow.getSeconds();
+                if(Minutes<10){
+                    Minutes = "0"+Minutes;}
+                if (HourS < 10){
+                    HourS="0"+HourS;
+                }if(Seconds < 10){
+                    Seconds = "0" + Seconds;
+                }
+            am= HourS + ":" + Minutes +":" + Seconds;                
+                    mehn();                 },1000);
+                function mehn(){
+                console.log(am);
+                document.getElementById("spanA").innerHTML=am;
+                console.log(document.getElementById("spanA").innerHTML);
+
+                }
+
+         
+            },
+ weekday:(week)=>{
+                var arr=['SUN','MON','TUE','WED','THUR','FRI','SAT'];
+                var abg = new Date();
+                var boj =abg.getDay();
+             
+                 week=arr[boj];
+                 console.log(week);
+                 return week;
+                 console.log(weekday(week));
+                
+            },
+
+            kasting:()=>{
+      this.disse=false;
+    document.getElementById("tabA");
+    
+    
+    
+    } , 
+
+        
+man:function(ab){
+    this.abg =!this.abg;
+    if(this.abg == true){
+        this.ab="ON";
+
+        document.getElementById("tdA").style.backgroundColor="rgba(255,255,255,0.6)";
+        document.getElementById("tdA").style.color="rgba(0,0,0,1)";
+
+        document.getElementById("tdA").style.boxShadow="none";
+
+
+        
+    }
+    else{
+        this.ab="OFF";
+
+        document.getElementById("tdA").style.backgroundColor="rgba(225,225,225,0)";
+    }
+           },
+                
+man1:function(cd){
+    this.cde =!this.cde;
+    if(this.cde == true){
+        this.cd="ON";
+    
+    
+        document.getElementById("tdA1").style.backgroundColor="rgba(255,255,255,0.6)";
+        
+
+        document.getElementById("tdA1").style.boxShadow="none";
+    
+    
+    }
+    else{
+        this.cd="OFF";
+        document.getElementById("tdA1").style.backgroundColor="rgba(255,255,255,0.2)";
+    }        },
+
+    man2:function(de){
+        this.cde =!this.cde;
+    if(this.cde == true){
+        this.de="ON";
+        
+        document.getElementById("tdA2").style.backgroundColor="rgba(255,255,255,0.6)";
+        document.getElementById("tdA2").style.boxShadow="none";
+    
+    }
+    else{
+        this.de="OFF";
+        document.getElementById("tdA2").style.backgroundColor="rgba(255,255,255,0.2)";
+    }  
+    },
+
+    man3:function(ef){
+
+
+        this.efg =!this.efg;
+    if(this.efg == true){
+        this.ef="ON";
+
+        
+        document.getElementById("tdA3").style.backgroundColor="rgba(255,255,255,0.6)";
+        document.getElementById("tdA3").style.boxShadow="none";
+    }
+    else{
+        this.ef="OFF";
+        document.getElementById("tdA3").style.backgroundColor="rgba(255,255,255,0.2)";
+    }  } ,
+
+
+    chk:function(malt){
+        this.malt=!this.malt;
+        var moj=document.getElementById("naam");
+      if(this.malt==true){
+          
+        document.getElementById("circlA").innerHTML="<i class='bi bi-brightness-high'></i>";
+      }
+      else{
+          console.log("ggggggggg");
+          document.getElementById("circlA").innerHTML="<i class='bi bi-brightness-high'></i>";
+        
+      }
+
+      
+    },
+        ghd:function(mara){      
+     this.mara=!this.mara;
+     
+       
+      if(this.mara == true){
+          document.getElementById("circlB").innerHTML="<i class='bi bi-alarm'></i>";
+      }
+      else {
+          
+          document.getElementById("circlB").innerHTML="<i class='bi bi-alarm'></i>";
+        
+      }
+
+    }, 
+
+    aris:function(chint){      
+     this.chint=!this.chint;
+     
+       
+      if(this.chint == true){
+          document.getElementById("circlC").innerHTML="<i class='bi bi-activity'></i>";
+      }
+      else {
+          
+          document.getElementById("circlC").innerHTML="<i class='bi bi-activity'></i>";
+        
+      }
+
+    },
+    ekuru:function(abiodun){      
+     this.abiodun=!this.abiodun;
+     
+       
+      if(this.abiodun == true){
+          document.getElementById("circlD").innerHTML="<i class='bi bi-battery'></i>";
+      }
+      else {
+          
+          document.getElementById("circlD").innerHTML="<i class='bi bi-battery'></i>";
+        
+      }
+
+    },
+    mp:function(poy){      
+     this.poy=!this.poy;
+     
+       
+      if(this.poy == true){
+          document.getElementById("circlD").innerHTML="<i class='bi bi-book'></i>";
+      }
+      else {
+          
+          document.getElementById("circlD").innerHTML="<i class='bi bi-book-fill'></i>";
+        
+      }
+
+    },
+
+    wale:function(muhi){      
+     this.muhi=!this.muhi;
+     
+       
+      if(this.muhi == true){
+          document.getElementById("circlD").innerHTML="<i class='bi bi-book'></i>";
+      }
+      else {
+          
+          document.getElementById("circlD").innerHTML="<i class='bi bi-book-fill'></i>";
+        
+      }
+
+    },
+    pj:function(zeh){      
+     this.zeh=!this.zeh;
+     
+       
+      if(this.zeh == true){
+          document.getElementById("circlD").innerHTML="<i class='bi bi-book'></i>";
+      }
+      else {
+          
+          document.getElementById("circlD").innerHTML="<i class='bi bi-book-fill'></i>";
+        
+      }
+
+    },
+    lex:function(pint){      
+     this.pint=!this.pint;
+     
+       
+      if(this.pint == true){
+          document.getElementById("circlD").innerHTML="<i class='bi bi-book'></i>";
+      }
+      else {
+          
+          document.getElementById("circlD").innerHTML="<i class='bi bi-book-fill'></i>";
+        
+      }
+
+    },
+    }
+});
+
+
+
+
+  
+</script>
+
+
+<script type="text/javascript">
+
+
+
+
+</script>
+</body>
+
+</html>
